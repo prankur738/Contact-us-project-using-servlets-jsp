@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Login Page</title>
+<style>
+
+
+
+header {
+	padding: 20px;
+	background-color: #333;
+	height: 4em;
+	text-align: center;
+	color: white;	
+}
+
+.form-container {
+    max-width: 40%;
+	margin: 80px auto;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);	
+}
+
+.contact-form h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-container label {
+	display: block;
+	font-weight: bold;
+}
+
+.form-container label::after {
+  content: " *";
+  color: red;
+}
+.form-container input,textarea {
+	width: 90%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-bottom: 1rem;
+	resize: vertical;
+}
+
+.submit-button {
+	padding: 10px 20px;
+	background-color: #0dac30;
+	border: none;
+	color: white;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+<header>
+        <h1>Welcome to Admin Login Page</h1>        
+    </header>
+
+
+
+ <div class="form-container">
+            <h2></h2>
+            <h2>Enter your details here</h2>
+            <form action="/ContactUsPage/AuthenticateAdmin" method="post">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="pssword"  name="password" required>
+                
+                <button type="submit" class="submit-button">Login</button>
+                
+                </form>
+        </div>
+
+
+</body>
+</html>
